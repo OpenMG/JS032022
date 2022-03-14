@@ -1,29 +1,38 @@
 let c= [34,34,-27,76,100,-46,27,39,-50,27,32]
-
+ /**
+  * 1. Manala doublons anaty tableau ana nombre 
+  * @param {Array} table 
+  * @param {boolean} signe 
+  * @returns Un tableau sans doublons
+  */
 function ManalaDoublon(table, signe=true){
     let d=[]
     let bool=null
-    for (let i = 0; i < c.length; i++) {
+    for (let i = 0; i < table.length; i++) {
             bool=false
             for (let index=0; index<d.length; index++) {
                 if (signe) {
-                    if(Math.abs(d[index])=== Math.abs(c[i])){
+                    if(Math.abs(d[index])=== Math.abs(table[i])){
                         bool=true
                     }
                 } else {
-                    if(d[index]=== c[i]){
+                    if(d[index]=== table[i]){
                         bool=true
                     }
                 }
             }
             if(!bool){
-            d.push(c[i])
+            d.push(table[i])
         }
     }
     return d
 }
-
-function somme(table,){
+/**
+ * 3. Total ny nombre negative sy positive anaty tableau ana nombre
+ * @param {array} table 
+ * @returns Somme des nombres positives et négatives
+ */
+function somme(table){
     let neg=0
     let pos=0
     for (let i = 0; i < table.length; i++) {
@@ -33,17 +42,65 @@ function somme(table,){
             pos= pos+ table[i]
         }
     }   
+    onsole.log("Negatives: "+neg)
+    console.log("Positives: "+pos)
     return [neg, pos]
 }
 
-console.table(ManalaDoublon(c,false))
-
 e=[23, 23, 23, 3, 4, 5, 5, 5, 1, 0, 3]
-
-function occurence(table) {
-    let temp= ManalaDoublon(table,false)
+c.sort()
+/**
+ * 4. Nombre miverina in-betsaka indrindra anaty tableau (raha misy mitovy dia aseo daholo)
+ * @param {Array} tb 
+ */
+function occurence(tb) {
+    let temp= ManalaDoublon(tb,false)
     let occurence=[ ]
+    let result=[]
+
     for (let i = 0; i < temp.length; i++) {
+        occurence[temp[i]]=0
+        for (let ind = 0; ind < tb.length; ind++) {
+            if(temp[i]===tb[ind]){
+                occurence[temp[i]]++
+            }
+        }
+    }
+
+    for (let i = 0; i < occurence.length; i++) {
+        if (occurence[i]===undefined) {
+            occurence[i]=0
+        }   
+    }
+
+    let max=Math.max(...occurence)
+    for (let i = 0; i < occurence.length; i++) {
+        if(occurence[i]===max){
+            result.push(i)
+        }
+        
+    }   return result
+}
+let y=occurence(e)
+console.log(y)
+//
+/**
+ * 
+5. Combinaison ana nombre lehibe indrindra anaty tableau (positive daholo ny nombre anaty tableau)
+ * @param {array} table 
+ */
+function combinaison(table) {
+    for (let i = 0; i < table.length; i++) {
+        if(table[i]<0){
+            console.log("Verifier votre entré")
+            return
+        }
+    }
+    let result= table.sort().reverse()
+    let chiffre= ""
+    for (let i = 0; i < result.length; i++) {
+        chiffre=chiffre+result[i]
         
     }
+    return chiffre
 }
