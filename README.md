@@ -54,7 +54,7 @@ Ireo excercice rehetra mandritra ny formations no hitanareo ato.
 
 ```
     in: [23, 23, 23, 3, 4, 5, 5, 5, 1, 0, 3]
-    out: 23, 5
+    out: 23, 5, 3
 ```
 
 5. Combinaison ana nombre lehibe indrindra anaty tableau (positive daholo ny nombre anaty tableau)
