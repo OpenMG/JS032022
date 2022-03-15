@@ -28,6 +28,28 @@ function ManalaDoublon(table, signe=true){
     return d
 }
 /**
+ * 2. Mandahatra element anaty tableau ana nombre par ordre croissant (raha misy doublons dia igniorena) avy eo decroissant
+ * @param {Array} table 
+ */
+ function ArraySort(table) {
+    let temp=[]
+    table= ManalaDoublon(table,false)
+    for (let i = 0; i < table.length; i++) {
+        for (let j = i; j < table.length; j++) {
+        if (table[i]>table[j]) {
+            temp[0]=table[i]
+            temp[1]=table[j]
+            table[i]=temp[1]
+            table[j]=temp[0]
+        }           
+    }     
+}
+    console.log("Croissant : "+table)
+    console.log("Decroissant : "+table.reverse())
+    
+}
+
+/**
  * 3. Total ny nombre negative sy positive anaty tableau ana nombre
  * @param {array} table 
  * @returns Somme des nombres positives et négatives
@@ -47,8 +69,7 @@ function somme(table){
     return [neg, pos]
 }
 
-e=[23, 23, 23, 3, 4, 5, 5, 5, 1, 0, 3]
-c.sort()
+
 /**
  * 4. Nombre miverina in-betsaka indrindra anaty tableau (raha misy mitovy dia aseo daholo)
  * @param {Array} tb 
