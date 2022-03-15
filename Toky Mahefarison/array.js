@@ -34,7 +34,7 @@ function removeDuplicates(array) {
 console.log('\n');
 
 const input = [23, 0, -23, 1, 5, 0];
-console.log('Remove duplicates method:');
+console.log('1. Remove duplicates method:');
 console.log('> in ', input);
 console.log('> out', removeDuplicates(input));
 
@@ -75,7 +75,7 @@ function sort(array) {
 }
 
 
-console.log('Sort ascending/descending method:');
+console.log('2. Sort ascending/descending method:');
 console.log('in ', input);
 sort(input);
 
@@ -101,7 +101,7 @@ function sumPN(array) {
             * positives: ${sumP}`);
 }
 const sumArray = [12, -3, -4, 0, 1];
-console.log('Sum method:');
+console.log('3. Sum method:');
 sumPN(sumArray);
 
 console.log('\n');
@@ -144,7 +144,7 @@ function mostRepeated(array) {
     console.log('out: ', mostRepeatedNumber.join(', '));
 }
 
-console.log('Most number repeated method:');
+console.log('4. Most number repeated method:');
 mostRepeated([23, 23, 23, 3, 4, 5, 5, 5, 1, 0, 3]);
 
 console.log('\n');
@@ -166,10 +166,12 @@ function maxCombinaison(array) {
         .join('');
 }
 
-console.log('Most combination method:');
+console.log('5. Most combination method:');
 console.log('in: ', [2, 2, 0, 5]);
 console.log('out: ', maxCombinaison([2, 2, 0, 5]));
 
 
 console.log('in: ', [1, 3, 6]);
 console.log('out: ', maxCombinaison([1, 3, 6]));
+
+console.log('\n');
