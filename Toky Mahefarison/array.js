@@ -80,3 +80,28 @@ console.log('in ', input);
 sort(input);
 
 console.log('\n');
+
+
+
+/**
+ * Sum of positive and negative numbers in an array
+ * in: [12, -3, -4, 0, 1]
+ * out:
+ *   * negatives: -7
+ *   * positives: 13
+ * @param {[]} array 
+ */
+function sumPN(array) {
+    let sumP = 0, sumN = 0;
+    array.forEach(number => number > 0 ? sumP += number : sumN += number);
+    console.log(`
+        in: ${array}
+        out:
+            * negatives: ${sumN}
+            * positives: ${sumP}`);
+}
+const sumArray = [12, -3, -4, 0, 1];
+console.log('Sum method:');
+sumPN(sumArray);
+
+console.log('\n');
