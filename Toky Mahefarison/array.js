@@ -105,3 +105,71 @@ console.log('Sum method:');
 sumPN(sumArray);
 
 console.log('\n');
+
+
+/**
+ * The most number repeated in an array
+ * 
+ * in: [23, 23, 23, 3, 4, 5, 5, 5, 1, 0, 3]
+ * out: 23, 5
+ * @param {[]} array 
+ */
+function mostRepeated(array) {
+    // Group the same number in the sub array of container
+    // [ [23, 23, 23], [3, 3], [4], [5, 5, 5], [1], [0] ]
+    const arrayContainer = [[]];
+    for (let index = 0; index < array.length; index++) {
+        const element = array[index];
+        let elementIsCheckedInSubArray = false;
+        for (const subArray of arrayContainer) {
+            elementIsCheckedInSubArray = subArray.includes(element);
+            if (elementIsCheckedInSubArray) {
+                subArray.push(element);
+                elementIsCheckedInSubArray = true;
+                break;
+            }
+        }
+        !elementIsCheckedInSubArray && arrayContainer.push([element]);
+    }
+    // filter the sub array that has the max length
+    let maxLength = 0;
+    arrayContainer.forEach(sub => sub.length > maxLength ? maxLength = sub.length : undefined);
+    const mostRepeatedNumber = 
+        arrayContainer
+            .filter(sub => sub.length === maxLength)  // => [ [23, 23, 23], [5, 5, 5] ]
+            .map(mostRepeated => [...new Set(mostRepeated)]) // => [ [23], [5] ]
+            .flat(); // merge sub-arrays to form one => [23, 5]
+
+    console.log('in: ', array);
+    console.log('out: ', mostRepeatedNumber.join(', '));
+}
+
+console.log('Most number repeated method:');
+mostRepeated([23, 23, 23, 3, 4, 5, 5, 5, 1, 0, 3]);
+
+console.log('\n');
+
+
+/**
+ * The greatest number of combinations of an array of numbers
+ * in: [2, 2, 0, 5]
+ * out: 5220
+ * 
+ * in: [1, 3, 6]
+ * out: 631
+ * 
+ * @param {[]} array 
+ */
+function maxCombinaison(array) {
+    return +array
+        .sort((a, b) => b-a)
+        .join('');
+}
+
+console.log('Most combination method:');
+console.log('in: ', [2, 2, 0, 5]);
+console.log('out: ', maxCombinaison([2, 2, 0, 5]));
+
+
+console.log('in: ', [1, 3, 6]);
+console.log('out: ', maxCombinaison([1, 3, 6]));
