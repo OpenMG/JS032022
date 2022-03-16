@@ -24,6 +24,7 @@ Ireo excercice rehetra mandritra ny formations no hitanareo ato.
 ## Contributors
 - [Chrys rakotonimanana](https://github.com/chrys-elrak)
 - [Rasolondraibe Tolotra Mandresy](https://github.com/TolotraMandresy)
+- [Toky Mahefarison](https://github.com/gituxmanjaka)
 
 ## Excercices
 
