@@ -1,5 +1,4 @@
 let arr1 = [23, 0, -23, 1, 5, 0]
-
 // 1 - Manala doublons anaty tableau ana nombre
 function removeDoublons(array) {
   let newArr = []
@@ -10,9 +9,9 @@ function removeDoublons(array) {
   }
   return newArr
 }
-
 const newArr = removeDoublons(arr1)
 console.log(newArr)
+
 
 // 2 - Mandahatra element anaty tableau ana nombre par ordre croissant (raha misy doublons dia igniorena) avy eo decroissant
 function trie(arr, order = 'asc') {
@@ -32,12 +31,12 @@ function trie(arr, order = 'asc') {
           arr2[n] = temp
         }
       }
-
     }
   }
   return arr2
 }
 const arrSort = trie(arr1, 'dsc')
+
 
 // 3 - Total ny nombre negative sy positive anaty tableau ana nombre
 let sumP = 0
@@ -53,6 +52,7 @@ function sum(array) {
   console.log(sumP, sumN);
 }
 sum([12, -3, -4, 0, 1])
+
 
 // 4 - Nombre miverina in-betsaka indrindra anaty tableau (raha misy mitovy dia aseo daholo)
 let array = [23, 23, 23, 23, 3, 4, 5, 5, 5, 1, 0]
@@ -71,7 +71,6 @@ function occure(arr) {
 }
 const arr = occure(array)
 console.log(arr)
-
 
 
 // 5 - Combinaison ana nombre lehibe indrindra anaty tableau (positive daholo ny nombre anaty tableau)
