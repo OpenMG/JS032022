@@ -23,6 +23,8 @@ Ireo excercice rehetra mandritra ny formations no hitanareo ato.
 > Ajouteo eo amin'ny contributors ny anaranao :) 
 ## Contributors
 - [Chrys rakotonimanana](https://github.com/chrys-elrak)
+- [Rasolondraibe Tolotra Mandresy](https://github.com/TolotraMandresy)
+- [Toky Mahefarison](https://github.com/gituxmanjaka)
 
 ## Excercices
 
