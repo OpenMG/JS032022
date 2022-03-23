@@ -26,6 +26,7 @@ Ireo excercice rehetra mandritra ny formations no hitanareo ato.
 - [Rasolondraibe Tolotra Mandresy](https://github.com/TolotraMandresy)
 - [Toky Mahefarison](https://github.com/gituxmanjaka)
 - [Rajaonarison](https://github.com/MorenoRajaonarison)
+- [Mitantsoaa](https://github.com/Mitantsoaa)
 
 ## Excercices
 
