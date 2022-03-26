@@ -28,6 +28,7 @@ Ireo excercice rehetra mandritra ny formations no hitanareo ato.
 - [Rajaonarison](https://github.com/MorenoRajaonarison)
 - [Mitantsoaa](https://github.com/Mitantsoaa)
 - [Mii Rindra](https://github.com/MiiRindra)
+- [Safidy_rama](https://github.com/safidy10)
 
 ## Excercices
 
