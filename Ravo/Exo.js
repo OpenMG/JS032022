@@ -84,3 +84,17 @@ else
 {
     console.log('Notes milieu est : ' + Notes1[Position]);
 }
+
+//Nombre possible de 1, 2, 3.
+let Tab = [1, 2, 3];
+let c, d = "";
+for (let i = 0; i < Tab.length; i++)
+{
+    c += Tab [i];
+}
+console.log(c);
+for (let i = Tab.length - 1; i >= 0 ; i--)
+{
+    d += Tab [i];
+}
+console.log(d);
