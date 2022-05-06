@@ -9,7 +9,7 @@ console.log(Arrondi);
 
 //Affichage Notes
 let Notes = [7, 8, 13, 10, 9];
-let Sommes;
+let Somme = 0;
 for (let i = 0; i < Notes.length; i++)
 {
     console.log(Notes[i]);
@@ -28,3 +28,11 @@ for (let i = 0; i < Notes.length; i++)
      }
 }
 
+//Moyenne
+for (let i = 0; i < Notes.length; i++)
+{
+    Somme += Notes [i];
+}
+
+let Moyenne = Somme/Notes.length;
+console.log('Moyenne : ' + Moyenne);
