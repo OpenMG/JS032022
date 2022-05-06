@@ -30,6 +30,7 @@ Ireo excercice rehetra mandritra ny formations no hitanareo ato.
 - [Mii Rindra](https://github.com/MiiRindra)
 - [Safidy_rama](https://github.com/safidy10)
 - [Tebs Andro](https://github.com/TebsGasy)
+- [Ravo](https://github.com/epramh)
 
 ## Excercices
 
