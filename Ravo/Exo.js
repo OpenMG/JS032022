@@ -15,7 +15,7 @@ for (let i = 0; i < Notes.length; i++)
     console.log(Notes[i]);
 }
 
-//Affichage Notes supérieur ou égale à 10 et Notes inférieur ou égale à 10
+//Affichage Notes supérieur ou égale à 10 et Notes inférieur à 10
 for (let i = 0; i < Notes.length; i++)
 {
     if (Notes [i] >= 10)
@@ -24,7 +24,7 @@ for (let i = 0; i < Notes.length; i++)
      }
      else 
      {
-         console.log(`Notes inférieur ou égale à 10 : ${Notes[i]}`);
+         console.log(`Notes inférieur à 10: ${Notes[i]}`);
      }
 }
 
