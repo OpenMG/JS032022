@@ -36,3 +36,17 @@ for (let i = 0; i < Notes.length; i++)
 
 let Moyenne = Somme/Notes.length;
 console.log('Moyenne : ' + Moyenne);
+
+// Notes par Ordre Croissant
+function Ordre_Croissant()
+{
+    Notes.sort(function(a, b)
+    {
+        return a - b
+    }
+    )
+    console.log('Notes par Ordre Croissant : ' + Notes)
+}
+Ordre_Croissant()
+
+console.log('Notes par Ordre Décroissant : ' + Notes.reverse());
