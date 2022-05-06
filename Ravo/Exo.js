@@ -8,7 +8,7 @@ console.log(Racine_Carrée);
 console.log(Arrondi);
 
 //Affichage Notes
-let Notes = [7, 8, 13, 10, 9];
+let Notes = [ 8, 13, 15, 9];
 let Somme = 0;
 for (let i = 0; i < Notes.length; i++)
 {
@@ -52,12 +52,35 @@ Ordre_Croissant()
 //Notes par Ordre Décroissant
 console.log('Notes par Ordre Décroissant : ' + Notes.reverse());
 
-// Position milieu du côté gauche
-let Notes1 = [9, 15, 12, 7];
-let Position = Math.round(Notes1.length/2);
-console.log('Position du milieu : ' + [Position - 1]);
-console.log('Notes du position du milieu : ' + Notes1[Position - 1]);
+// Position du milieu côté gauche
+let Position = Math.round(Notes.length/2);
+console.log('Position du milieu côté gauche: ' + [Position - 1]);
+console.log('Notes position du milieu côté gauche: ' + Notes[Position - 1]);
 
-// Position milieu du côté droite
-console.log('Position du milieu : ' + [Position]);
-console.log('Notes du position du milieu : ' + Notes1[Position]);
+// Position du milieu côté droite
+console.log('Position du milieu côté droite: ' + [Position]);
+console.log('Notes position du milieu côté droite: ' + Notes[Position]);
+
+// Notes milieu min max
+if (Notes.length % 2 == 0)
+{
+    Min = Notes [Position];
+    Max = Notes [Position + 1];
+    console.log('Min : ' + Min + ' et Max : ' + Max)
+}
+else
+{
+    console.log('Notes milieu est : ' + Notes[Position - 1]);
+}
+
+let Notes1 = [7, 5, 12, 9, 15];
+if (Notes1.length % 2 == 0)
+{
+    Min = Notes1 [Position];
+    Max = Notes1 [Position + 1];
+    console.log('Min : ' + Min + ' et Max : ' + Max)
+}
+else
+{
+    console.log('Notes milieu est : ' + Notes1[Position]);
+}
