@@ -1,7 +1,7 @@
 const a = 'Hello World';
 console.log(a);
 
-let b = 10;
+let b = 10.5;
 let Racine_Carrée = Math.sqrt(b);
 let Arrondi = Math.round(b);
 console.log(Racine_Carrée);
@@ -49,4 +49,15 @@ function Ordre_Croissant()
 }
 Ordre_Croissant()
 
+//Notes par Ordre Décroissant
 console.log('Notes par Ordre Décroissant : ' + Notes.reverse());
+
+// Position milieu du côté gauche
+let Notes1 = [9, 15, 12, 7];
+let Position = Math.round(Notes1.length/2);
+console.log('Position du milieu : ' + [Position - 1]);
+console.log('Notes du position du milieu : ' + Notes1[Position - 1]);
+
+// Position milieu du côté droite
+console.log('Position du milieu : ' + [Position]);
+console.log('Notes du position du milieu : ' + Notes1[Position]);
