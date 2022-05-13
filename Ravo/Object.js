@@ -10,25 +10,24 @@ let tab = [{Nom : "ti", Scientifique : 10.5, Literaire : 12},
 {Nom : "na", Scientifique : "null", Literaire : 7}];
 console.log(tab);
 
-
-/*let s = 0;
+//Moyenne
+let s = 0;
 let m = 0;
 let Tmo = 0;
 for (let i = 0; i < tab.length; i++)
 {
-  if (Tab[i].Scientifique == null || Tab[i].Literaire == null)
+  if (tab[i].Scientifique == null || tab[i].Literaire == null)
   {
     continue;
   }
    else    
     {
-      s = Tab[i].Scientifique + Tab[i].Literaire;
+      s += (tab[i].Scientifique, tab[i].Literaire);
       m = s/2;
       
-      Tmo.push({Mo : m});
+    
     }
   
 }
- 
+
 console.log(m);
-*/
